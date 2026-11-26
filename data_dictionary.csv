@@ -1,0 +1,48 @@
+variable,description,available_in,example_value
+case_id,Unique synthetic case identifier.,case_line_list.csv,MWZ-0001
+record_type,Record type; all rows in case line list are cases.,case_line_list.csv,Case
+county,Fictional county name; explicitly synthetic.,case_line_list.csv; population_denominators.csv; case_control_exposures.csv,Mwangaza County (synthetic)
+subcounty,Subcounty of usual residence.,case_line_list.csv; population_denominators.csv; case_control_exposures.csv,Riverbend
+village,Village of usual residence.,case_line_list.csv; population_denominators.csv; case_control_exposures.csv,Soko
+age_years,Age in completed years.,case_line_list.csv; case_control_exposures.csv,50
+age_group,Categorical age band derived from age_years.,case_line_list.csv; case_control_exposures.csv,45-64
+sex,Reported sex.,case_line_list.csv; case_control_exposures.csv,Female
+pregnancy_status,Pregnancy status where applicable; otherwise not applicable.,case_line_list.csv,Not applicable
+date_of_symptom_onset,Date symptoms first began; primary date for epidemic curve.,case_line_list.csv,2026-08-30
+date_reported,Date case was reported to surveillance.,case_line_list.csv,2026-09-01
+date_admitted,Admission date; blank if not hospitalized.,case_line_list.csv,2026-09-01
+date_specimen_collected,Date stool specimen was collected.,case_line_list.csv,2026-09-03
+date_outcome_recorded,Date outcome was recorded or follow-up date.,case_line_list.csv,2026-09-03
+case_classification,Synthetic suspected/probable/confirmed classification.,case_line_list.csv,Suspected
+laboratory_result,Laboratory result or Not tested.,case_line_list.csv; case_control_exposures.csv,Pending
+specimen_type,Specimen collected for laboratory investigation.,case_line_list.csv,Stool
+vibrio_cholerae_serogroup,Serogroup result where confirmed; otherwise pending/not detected.,case_line_list.csv,Pending
+diarrhoea,"1=yes, 0=no.",case_line_list.csv,1
+vomiting,"1=yes, 0=no.",case_line_list.csv,0
+fever,"1=yes, 0=no.",case_line_list.csv,0
+abdominal_cramps,"1=yes, 0=no.",case_line_list.csv,0
+dehydration_status,Clinical dehydration category.,case_line_list.csv,Some
+hospitalized,"1=yes, 0=no.",case_line_list.csv,1
+treatment_received,Supportive treatment recorded.,case_line_list.csv,ORS and IV fluids
+outcome,Recorded outcome: Recovered or Died.,case_line_list.csv,Recovered
+water_source_usual,Usual drinking-water source before illness.,case_line_list.csv; case_control_exposures.csv,River/stream
+drank_untreated_water,"1=yes, 0=no; case line-list exposure in the preceding 7 days.",case_line_list.csv,0
+ate_street_vended_food_7d,"1=yes, 0=no; ate street-vended food in preceding 7 days.",case_line_list.csv; case_control_exposures.csv,1
+attended_large_gathering_7d,"1=yes, 0=no; attended a large gathering in preceding 7 days.",case_line_list.csv; case_control_exposures.csv,0
+household_contact_of_case,"1=yes, 0=no; reported household contact with a case.",case_line_list.csv; case_control_exposures.csv,0
+travel_outside_village_7d,"1=yes, 0=no; travelled outside usual village in preceding 7 days.",case_line_list.csv; case_control_exposures.csv,0
+case_definition_version,Label for the synthetic operational case definition.,case_line_list.csv,Cholera suspected/probable/confirmed - synthetic operational definition v1
+population_at_risk,,population_denominators.csv,4634
+households,,population_denominators.csv,1103
+data_reference_year,,population_denominators.csv,2026
+participant_id,Unique synthetic case/control participant identifier.,case_control_exposures.csv,MWZ-0001
+matched_case_id,Case identifier for the case-control sampling set; controls are linked to a case.,case_control_exposures.csv,MWZ-0001
+participant_type,Case or Control.,case_control_exposures.csv,Case
+interview_date,Date participant interview was conducted.,case_control_exposures.csv,2026-08-30
+drank_untreated_water_7d,"1=yes, 0=no; drank untreated water in preceding 7 days.",case_control_exposures.csv,0
+symptomatic_diarrhoea_7d,"1=yes, 0=no; case status indicator for the analytic dataset.",case_control_exposures.csv,1
+laboratory_tested,"1=yes, 0=no.",case_control_exposures.csv,1
+onset_date,,daily_epidemic_curve.csv,2026-08-01
+new_cases,,daily_epidemic_curve.csv,0
+cumulative_cases,,daily_epidemic_curve.csv,0
+week_start,,daily_epidemic_curve.csv,2026-07-27

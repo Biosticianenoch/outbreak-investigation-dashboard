@@ -1,0 +1,11 @@
+name: outbreak-investigation-dashboard
+title: Outbreak Investigation Dashboard
+username: enochosen
+account: enochosen
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 18532750
+appGuid:
+bundleId: 12872315
+url: https://enochosen.shinyapps.io/outbreak-investigation-dashboard/
+version: 1
